@@ -9,16 +9,32 @@
 
         <style>
 
+            @keyframes blinker {
+                0% {opacity: 0%;}
+                33% {opacity: 50%;}
+                67% {opacity: 100%;}
+                100% {opacity: 50%;}
+            }
+
             body {
                 font-family: sans-serif;
             }
 
             div.full-height {
                 height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
-            p#typewriter {
+            p#typerwriter {
+                display: inline-block;
+            }
 
+            span#blinker {
+                animation: blinker 1s infinite;
+                font-weight: bold;
+                margin-left: -5px;
             }
 
         </style>
@@ -30,8 +46,16 @@
     <body>
 
         <div class="fullheight">
+
             <h1>This website is going to teach you to be a web developer!</h1>
-            <p id="typewriter" class="typewrite" data-period="2000" data-type='["Learn structure with HTML!", "Add beautiful styling with CSS", "Add custom interactivity with JavaScript!", "And much, much more!"]'></p>
+
+            <br />
+            <br />
+
+            <p id="typerwriter" class="typewrite" data-period="2000" data-type='["Learn structure with HTML!", "Add beautiful styling with CSS!", "Create custom interactivity with JavaScript!", "And so much more!"]'></p>
+
+            <span id="blinker">|</span>
+
         </div>
 
     </body>
