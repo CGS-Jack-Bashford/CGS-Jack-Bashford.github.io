@@ -1,0 +1,29 @@
+@keyframes blinker {
+    0% {opacity: 0;}
+    33% {opacity: 0.5;}
+    67% {opacity: 1;}
+    100% {opacity: 0.5;}
+}
+
+body {
+    font-family: sans-serif;
+}
+
+div.full-height {
+    height: 100vh;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#typerwriter {
+    display: inline-block;
+}
+
+#blinker {
+    animation: blinker 1s infinite;
+    font-weight: bold;
+}
