@@ -22,24 +22,30 @@
 
             div.full-height {
                 height: 100vh;
+            }
+
+            .centered {
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
 
-            p#typerwriter {
+            #typerwriter {
                 display: inline-block;
             }
 
-            span#blinker {
+            #blinker {
                 animation: blinker 1s infinite;
                 font-weight: bold;
-                margin-left: -5px;
             }
 
         </style>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
         <script src="typewrite.js"></script>
+
+        <script src="smoothscroll.js"></script>
 
     </head>
 
@@ -52,9 +58,15 @@
             <br />
             <br />
 
-            <p id="typerwriter" class="typewrite" data-period="2000" data-type='["Learn structure with HTML!", "Add beautiful styling with CSS!", "Create custom interactivity with JavaScript!", "And so much more!"]'></p>
+            <div class="centered">
 
-            <span id="blinker">|</span>
+                <p id="typerwriter" class="typewrite" data-period="2000" data-type='["Learn structure with HTML!", "Add beautiful styling with CSS!", "Create custom interactivity with JavaScript!", "And so much more!"]'></p>
+
+                <span id="blinker">|</span>
+
+            </div>
+
+
 
             <h1>UPDATE:</h1>
 
