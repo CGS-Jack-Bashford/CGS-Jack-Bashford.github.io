@@ -19,13 +19,53 @@
           gtag('config', 'UA-120207382-1');
         </script>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <script src="Site/JavaScript/typewrite.js"></script>
 
         <script src="Site/JavaScript/smoothscroll.js"></script>
 
-        <link type="text/css" rel="stylesheet" href="main.css" />
+        <style>
+
+            @keyframes blinker {
+                0% {opacity: 0;}
+                33% {opacity: 0.5;}
+                67% {opacity: 1;}
+                100% {opacity: 0.5;}
+            }
+
+            body {
+                font-family: sans-serif;
+            }
+
+            div.full-height {
+                height: 100vh;
+            }
+
+            .centered {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #typerwriter {
+                display: inline-block;
+            }
+
+            #blinker {
+                animation: blinker 1s infinite;
+                font-weight: bold;
+            }
+
+            div#updates {
+                background-color: white;
+                border-color: #ccc;
+                border-radius: 25;
+            }
+
+        </style>
 
     </head>
 
@@ -52,7 +92,7 @@
 
                 <a href="Site/HTML/gallery.html">Image Gallery</a>
 
-        </div>
+            </div>
 
         </div>
 
