@@ -12,11 +12,11 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120207382-1"></script>
 
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-          gtag('config', 'UA-120207382-1');
+            gtag('config', 'UA-120207382-1');
         </script>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
@@ -27,7 +27,19 @@
 
         <script src="Site/JavaScript/smoothscroll.js"></script>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+        <script>
+            new WOW().init();
+        </script>
+
         <style>
+
+            .wow {
+                visibility: hidden;
+            }
 
             @keyframes blinker {
                 0% {opacity: 0;}
@@ -86,7 +98,7 @@
 
             </div>
 
-            <div id="updates">
+            <div id="updates" class="wow slideInLeft">
 
                 <h2>UPDATES:</h2>
 
