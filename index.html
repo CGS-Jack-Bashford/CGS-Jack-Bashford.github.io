@@ -19,17 +19,17 @@
             gtag('config', 'UA-120207382-1');
         </script>
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
         <script src="Site/JavaScript/typewrite.js"></script>
 
         <script src="Site/JavaScript/smoothscroll.js"></script>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 
         <script>
             new WOW().init();
@@ -50,13 +50,12 @@
 
             body {
                 font-family: sans-serif;
-                margin: 10px;
             }
 
             .centered {
-                display: flex;
                 align-items: center;
                 justify-content: center;
+                text-align: center;
             }
 
             #typerwriter {
@@ -69,13 +68,47 @@
             }
 
             div#updates {
-                background-color: white;
-                border-color: #ccc;
-                border-radius: 25;
+                width: 20%;
+            }
+
+            div#about {
+                width: 77%;
+                float: right;
             }
 
             div.full-height {
                 height: 100vh;
+            }
+
+            div#typewriteDiv {
+                font-size: 2em;
+                color: white;
+            }
+
+            div#typewriteDiv h1, div#typewriteDiv p {
+                color: white;
+            }
+
+            div#intro {
+                background-image: url("Site/Media/Images/Canberra copy.jpg");
+            }
+
+            div#large-border {
+                border-bottom: 1px solid white;
+                width: 70%;
+                margin-left: 17.5%;
+            }
+
+            h1#Hi-Im-Jack {
+                margin-bottom: 20px;
+            }
+
+            div#github.box p {
+                vertical-align: middle;
+            }
+
+            div#updates, div#about {
+                display: inline-block;
             }
 
         </style>
@@ -84,32 +117,54 @@
 
     <body>
 
-        <div class="fullheight box">
+        <div class="hero is-fullheight is-success wow fadeInUp animated" id="intro">
 
-            <h1>Hi, I'm Jack!</h1>
+            <div class="hero-body">
 
-            <br />
-            <br />
+                <div class="container">
 
-            <div class="centered">
+                    <div class="centered" id="typewriteDiv">
 
-                <p id="typerwriter" class="typewrite" data-period="2000" data-type='["Year 8 IST student", "Currently studying at Canberra Grammar School", "l33t h4ck0r ch11d", "2nd level Code Cadet"]'></p>
+                        <div><h1 class="title center animated fadeInDown" id="Hi-Im-Jack">Hi, I'm Jack!</h1></div>
 
-                <span id="blinker">|</span>
+                        <div id="large-border" role="separator"></div>
+
+                        <p id="typerwriter" class="typewrite subtitle" data-period="2000" data-type='["Year 8 IST student", "Currently studying at Canberra Grammar School", "l33t h4ck0r ch11d", "2nd Level Code Cadet"]'></p>
+
+                        <span id="blinker"></span>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
-            <div id="updates" class="wow lightSpeedIn">
+        <br />
 
-                <h2>UPDATES:</h2>
+        <div id="github" class="box wow animated lightSpeedIn">
 
-                <a href="Site/HTML/gallery.html">Image Gallery</a>
+            <p>
+                Fork me on GitHub! <a href="https://github.com/CGS-Jack-Bashford/CGS-Jack-Bashford.github.io" target="_blank"><img src="Site/Media/Images/realFork.jpg" alt="Fork me!" /></a>
+            </p>
 
-            </div>
+        </div>
 
 
+        <div id="updates" class="box wow fadeInUp">
+
+            <h2 class="title">UPDATES:</h2>
+
+            <a href="Site/HTML/gallery.html">Image Gallery</a>
+
+        </div>
+
+        <div id="about" class="box">
+
+
+
+        </div>
 
     </body>
 
