@@ -1,145 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <head>
+	<head>
 
-        <title>Advanced CSS - Image Gallery</title>
+        <meta charset="utf-8" />
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
+		<title>Advanced CSS - Image Gallery</title>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120207382-1"></script>
 
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-          gtag('config', 'UA-120207382-1');
+            gtag('config', 'UA-120207382-1');
         </script>
 
-        <style>
+		<style>
 
+		body {
+			margin: 20px;
+			padding: 0px;
+			background-color: white;
+		}
 
+		div#topDiv {
+			height: 100vh;
+		}
 
-            div#galleryBody {
-                height: 100vh;
-            }
+		div#greyDiv {
+			background-color: #666;
+			width: 840px;
+		}
 
-            body {
-                margin: 20px;
-            	padding: 0px;
-            	background-color: #666666;
-            }
+		ul {
+			padding-left: 0px;
+		}
 
-            ul {
-            	padding-left: 0px;
-            }
+		ul, li {
+			list-style-type: none;
+		}
 
-            ul, li {
-            	list-style-type: none;
-            }
+		img#left {
+			margin-right: 20px;
+		}
 
-            img#left {
-            	margin-right: 20px;
-            }
+		img#image2thumb {
+			position: relative;
+			left: 10px;
+		}
 
-            img#image2thumb {
-            	position: relative;
-            	left: 10px;
-            }
+		img.left {
+			margin-top: 10px;
+			margin-right: 10px;
+		}
 
-            img.left {
-            	margin-top: 10px;
-            	margin-right: 10px;
-            }
+		div#thumb {
+			width: 220px;
+			position: relative;
+			margin-top: 20px;
+			top: 20px;
+			left: 20px;
+		}
 
-            div#thumb {
-            	width: 220px;
-            	position: relative;
-            }
+		div#main {
+			position: relative;
+			left: 240px;
+			bottom: 228px;
+			background-color: #CCCCCC;
+			height: 505px;
+			width: 560px;
+			padding-top: 15px;
+			padding-left: 15px;
+			padding-right: 0px;
+			display: inline-block;
+			margin-top: 20px;
+		}
 
-            div#main {
-            	position: relative;
-            	left: 205px;
-            	bottom: 228px;
-            	background-color: #CCCCCC;
-            	height: 505px;
-            	width: 560px;
-            	padding-top: 15px;
-            	padding-left: 15px;
-            	padding-right: 0px;
-            	display: inline-block;
-            }
+		div#main p {
+			margin-right: 15px;
+		}
 
-            div#main p {
-            	margin-right: 15px;
-            }
+		#thumb a span {
+			display: none;
+		}
+		#thumb a:hover span {
+			display: block;
+			position: absolute;
+			left: 235px;
+			top: 15px;
+			z-index: 1;
+		}
 
-            #thumb a span {
-            	display: none;
-            }
+		div#codeBody {
+            background-color: white;
+            font-family: "Source Code Pro", monospace;
+        }
 
-            #thumb a:hover span {
-            	display: block;
-            	position: absolute;
-            	left: 220px;
-            	top: 15px;
-            	z-index: 1;
-            }
-
-            div#codeBody {
-                background-color: white;
-                font-family: "Source Code Pro", monospace;
-            }
-
-            pre {
-                white-space: pre-wrap;
-            }
+        pre {
+            white-space: pre-wrap;
+        }
 
         </style>
 
-    </head>
+	</head>
 
-    <body>
+	<body>
 
-        <div id="galleryBody">
+		<div id="topDiv">
 
-            <div id="thumb">
+			<div id="greyDiv">
 
-    			<ul>
-    				<li>
-    					<a href="#"><img src="Images/image1_thumb.jpg" alt="Image 1 Thumbnail" id="left image1thumb" /><span class="topRow"><img src="Images/image1.jpg" alt="Large image 1" /></span></a>
-    					<a href="#"><img src="Images/image2_thumb.jpg" alt="Image 2 Thumbnail" id="image2thumb" /><span class="topRow"><img src="Images/image2.jpg" alt="Large image 2" /></span></a>
-    				</li>
-    				<li>
-    					<a href="#"><img src="Images/image3_thumb.jpg" alt="Image 3 Thumbnail" class="left" id="image3thumb" /><span><img src="Images/image3.jpg" alt="Large image 3" /></span></a>
-    					<a href="#"><img src="Images/image4_thumb.jpg" alt="Image 4 Thumbnail" id="image4thumb" /><span><img src="Images/image4.jpg" alt="Large image 4" /></span></a>
-    				</li>
-    				<li>
-    					<a href="#"><img src="Images/image5_thumb.jpg" alt="Image 5 Thumbnail" class="left" id="image5thumb" /><span><img src="Images/image5.jpg" alt="Large image 5" /></span></a>
-    					<a href="#"><img src="Images/image6_thumb.jpg" alt="Image 6 Thumbnail" id="image6thumb"  /><span><img src="Images/image6.jpg" alt="Large image 6" /></span></a>
-    				</li>
-    			</ul>
+				<div id="thumb">
 
-    		</div>
+					<ul>
+						<li>
+							<a href="#"><img src="Images/image1_thumb.jpg" alt="Image 1 Thumbnail" id="image1thumb" /><span class="topRow"><img src="Images/image1.jpg" alt="Large image 1" /></span></a>
+							<a href="#"><img src="Images/image2_thumb.jpg" alt="Image 2 Thumbnail" id="image2thumb" /><span class="topRow"><img src="Images/image2.jpg" alt="Large image 2" /></span></a>
+						</li>
+						<li>
+							<a href="#"><img src="Images/image3_thumb.jpg" alt="Image 3 Thumbnail" class="left" id="image3thumb" /><span><img src="Images/image3.jpg" alt="Large image 3" /></span></a>
+							<a href="#"><img src="Images/image4_thumb.jpg" alt="Image 4 Thumbnail" id="image4thumb" /><span><img src="Images/image4.jpg" alt="Large image 4" /></span></a>
+						</li>
+						<li>
+							<a href="#"><img src="Images/image5_thumb.jpg" alt="Image 5 Thumbnail" class="left" id="image5thumb" /><span><img src="Images/image5.jpg" alt="Large image 5" /></span></a>
+							<a href="#"><img src="Images/image6_thumb.jpg" alt="Image 6 Thumbnail" id="image6thumb"  /><span><img src="Images/image6.jpg" alt="Large image 6"></span></a>
+						</li>
+					</ul>
 
-    		<div id="main">
+				</div>
 
-    			<img src="Images/grey.png" alt="Blank" id="image1" />
+				<div id="main">
 
-    			<div id="main-text">
+					<img src="Images/image1.jpg" alt="Blank" id="image1" />
 
-    				<p>This is a caption or a description of the image above. The caption can be short or <br /> contain several lines of text. The caption can be short or contain several lines of text.</p>
+					<div id="main-text">
 
-    			</div>
+						<p>This is a caption or a description of the image above. The caption can be short or <br /> contain several lines of text. The caption can be short or contain several lines of text.</p>
 
-    		</div>
+					</div>
 
-        </div>
+				</div>
 
-        <div id="codeBody">
+			</div>
+
+		</div>
+
+		<div id="codeBody">
 
             <h1>HTML code:</h1>
 
@@ -261,8 +271,8 @@ div#main p {
 }
             </pre>
 
-        </div>
+		</div>
 
-    </body>
+	</body>
 
 </html>
