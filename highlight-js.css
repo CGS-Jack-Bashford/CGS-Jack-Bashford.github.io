@@ -1,0 +1,27 @@
+.var {
+    color: #00b0ff;
+}
+
+.varName {
+    color: #00df50
+}
+
+.object {
+    color: #b3b300;
+}
+
+.objectContentInteger {
+    color: #ff2d00;
+}
+
+.objectContentString {
+    color: #ff8800;
+}
+
+.objectContentArray {
+    color: #0000ff;
+}
+
+.objectContentBoolean {
+    color: #663399;
+}

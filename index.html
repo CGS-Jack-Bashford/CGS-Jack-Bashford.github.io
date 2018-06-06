@@ -19,9 +19,13 @@
             gtag('config', 'UA-120207382-1');
         </script>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+
+        <link  type="text/css" rel="stylesheet" href="index.css" />
+
+        <link type="text/css" rel="stylesheet" href="highlight-js.css" />
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -34,88 +38,6 @@
         <script>
             new WOW().init();
         </script>
-
-        <style>
-
-            .wow {
-                visibility: hidden;
-            }
-
-            pre {
-                background-color: white;
-            }
-
-            @keyframes blinker {
-                0% {opacity: 0;}
-                33% {opacity: 0.5;}
-                67% {opacity: 1;}
-                100% {opacity: 0.5;}
-            }
-
-            body {
-                font-family: sans-serif;
-            }
-
-            .centered {
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-            }
-
-            #typerwriter {
-                display: inline-block;
-            }
-
-            #blinker {
-                animation: blinker 1s infinite;
-                font-weight: bold;
-            }
-
-            div#updates {
-                width: 20%;
-            }
-
-            div#about {
-                width: 77%;
-                float: right;
-            }
-
-            div.full-height {
-                height: 100vh;
-            }
-
-            div#typewriteDiv {
-                font-size: 2em;
-                color: white;
-            }
-
-            div#typewriteDiv h1, div#typewriteDiv p {
-                color: white;
-            }
-
-            div#intro {
-                background-image: url("Site/Media/Images/Canberra copy.jpg");
-            }
-
-            div#large-border {
-                border-bottom: 1px solid white;
-                width: 70%;
-                margin-left: 17.5%;
-            }
-
-            h1#Hi-Im-Jack {
-                margin-bottom: 20px;
-            }
-
-            div#github.box p {
-                vertical-align: middle;
-            }
-
-            div#updates, div#about {
-                display: inline-block;
-            }
-
-        </style>
 
     </head>
 
@@ -133,7 +55,7 @@
 
                         <div id="large-border" role="separator"></div>
 
-                        <p id="typerwriter" class="typewrite subtitle" data-period="2000" data-type='["Year 8 IST student", "Currently studying at Canberra Grammar School", "l33t h4ck0r ch11d", "2nd Level Code Cadet"]'></p>
+                        <p id="typerwriter" class="typewrite subtitle animated wow bounceInUp" data-period="2000" data-type='["Year 8 IST student", "Currently studying at Canberra Grammar School", "l33t h4ck0r ch11d", "2nd Level Code Cadet"]'></p>
 
                         <span id="blinker"></span>
 
@@ -144,25 +66,6 @@
             </div>
 
         </div>
-
-        <div id="about" class="hero is-light is-fullheight wow animated fadeInLeft">
-
-            <div class="columns">
-
-                <div class="column">
-
-                    <h2 class="title">ABOUT ME</h2>
-
-                    <p>
-                        I am a Year 8 student who is currently studying Year 8 IST (Web Design &amp; Development with HTML, CSS and JavaScript). I love to create websites and other code-related objects in my free time.
-                    </p>
-
-                </div>
-
-            </div>
-                
-        </div>
-
 
         <div id="github" class="box wow animated lightSpeedIn">
 
@@ -178,6 +81,42 @@
             <h2 class="title">UPDATES</h2>
 
             <a href="Site/HTML/gallery.html">Image Gallery</a>
+
+        </div>
+
+        <div id="about" class="box hero wow animated fadeInLeft">
+
+            <div class="columns">
+
+                <div class="column">
+
+                    <h2 class="title">ABOUT ME</h2>
+
+                    <p>
+                        I am a Year 8 student who is currently studying Year 8 IST (Web Design &amp; Development with HTML, CSS and JavaScript). I love to create websites and other code-related objects in my free time.
+                    </p>
+
+                </div>
+
+                <div class="column">
+
+                    <pre>
+                    <span class="var">var</span><span class="varName"> me</span> = {
+                        <span class="object">name</span>: <span class="objectContentString">'Jack'</span>,
+                        <span class="object">age</span>: <span class="objectContentInteger">12</span>,
+                        <span class="object">likes</span>: <span class="objectContentArray">[</span><span class="objectContentString">'Coding'</span>, <span class="objectContentString">'Soccer'</span>, <span class="objectContentString">'Languages'</span><span class="objectContentArray">]</span>,
+                        <span class="object">goodAt</span>: <span class="objectContentArray">[</span><span class="objectContentString">'HTML'</span>, <span class="objectContentString">'CSS'</span>, <span class="objectContentString">'Python'</span><span class="objectContentArray">]</span>,
+                        <span class="object">currentlyLearning</span>: <span class="objectContentArray">[</span><span class="objectContentString">'JavaScript'</span>, <span class="objectContentString">'Swift'</span>, <span class="objectContentString">'GO'</span>, <span class="objectContentString">'PHP'</span><span class="objectContentArray">]</span>,
+                        <span class="object">doesHacks</span>: <span class="objectContentBoolean">true</span>,
+                        <span class="object">isMac</span>: <span class="objectContentBoolean">true</span>
+                        <span class="object">Occupation</span>: <span class="objectContentString">'Student'</span>,
+                        <span class="object">favouriteNumber</span>: <span class="objectContentInteger">12</span>,
+                    }
+                    </pre>
+
+                </div>
+
+            </div>
 
         </div>
 
