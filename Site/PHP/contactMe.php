@@ -12,6 +12,7 @@ $headers = "From: $to";
 
 mail($to,$subject,$body);
 
+echo "Thanks!";
 header('Location:https://cgs-jack-bashford.github.io');
 
  ?>
