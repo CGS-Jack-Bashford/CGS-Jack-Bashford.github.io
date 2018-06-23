@@ -50,11 +50,11 @@ body {
 }
 
 div#updates {
-    width: 20%;
+    width: 15%;
 }
 
 div#github {
-    width: 77%;
+    width: 83%;
     float: right;
 }
 
@@ -72,7 +72,7 @@ div#typewriteDiv h1, div#typewriteDiv p {
 }
 
 div#intro {
-    background-image: url("Site/Media/Images/Canberra copy.jpg");
+    background-image: url("../Media/Images/Canberra.jpg");
     margin-bottom: 20px;
 }
 
@@ -88,6 +88,7 @@ h1#Hi-Im-Jack {
 
 div#github.box p {
     vertical-align: middle;
+    align-items: center;
 }
 
 div#updates, div#github {
