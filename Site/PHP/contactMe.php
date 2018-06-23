@@ -1,3 +1,20 @@
+<html>
+
+    <head>
+
+        <title>Submitted results</title>
+        <meta http-equiv="refresh" content="5; url(../../index.html)" />
+
+    </head>
+
+    <body>
+
+        <p>Thanks! I'll reply ASAP, but for now you'll be redirected back to the main page.</p>
+
+    </body>
+
+</html>
+
 <?php
 
 $name = $_POST['name'];
