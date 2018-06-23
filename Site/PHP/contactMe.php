@@ -29,4 +29,6 @@ $headers = "From: $to";
 
 mail($to,$subject,$body);
 
+header('Location:https://cgs-jack-bashford.github.io');
+
  ?>
