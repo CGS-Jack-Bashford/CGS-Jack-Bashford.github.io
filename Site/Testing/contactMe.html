@@ -1,3 +1,104 @@
+<div id="contact" class="box wow hero animated fadeInDown">
+
+    <h1 class="title">
+        Want to talk to me?
+    </h1>
+
+    <p>
+        Website updates, coding help, or just a question, I'm always glad to help you. Just fill out the form below, and I'll reply ASAP.
+    </p>
+
+    <br />
+    <br />
+
+    <form id="contactMe" class="wow hero animated fadeInUp" action="Site/PHP/contactMe.php" method="POST">
 
         <div class="columns">
+
             <div class="column">
+
+                <div class="field">
+
+                    <label class="label">Name</label>
+
+                    <div class="control">
+
+                        <input type="text" class="input" placeholder="Enter your name" name="name" required/>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="column">
+
+                <div class="field">
+
+                    <label class="label">Email address</label>
+
+                    <div class="control">
+
+                        <input type="email" class="input" placeholder="Enter your email address" name="email" required/>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="columns">
+
+            <div class="column">
+
+                <div class="field">
+
+                    <label class="label">What do you want to talk about?</label>
+
+                    <div class="control">
+
+                        <input type="text" class="input" placeholder="Really short description of your email" name="talkAbout" required />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="column">
+
+                <div class="field">
+
+                    <label class="label">Your actual email</label>
+
+                    <div class="control">
+
+                        <input type="text" class="input" placeholder="Just type your email body, but make sure everything is explained in detail" name="emailBody" required />
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="field">
+
+            <div class="control">
+
+                <input type="submit" class="button is-link" name="Submit" value="Send email" />
+
+            </div>
+
+        </div>
+
+        <p class="help">
+            All your information will be kept confidential
+        </p>
+
+    </form>
+
+</div>
