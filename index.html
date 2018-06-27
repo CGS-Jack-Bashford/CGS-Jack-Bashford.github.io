@@ -19,7 +19,7 @@
             gtag('config', 'UA-120207382-1');
         </script>
 
-        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+        <!--<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
 
         <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
 
@@ -33,7 +33,9 @@
 
         <script src="Site/JavaScript/typewrite.js"></script>
 
-        <script src="Site/JavaScript/smoothscroll.js"></script>
+        <script src="Site/JavaScript/smoothscroll.js"></script>-->
+
+        <script src="links.js"></script>
 
         <script>
             new WOW().init();
@@ -80,28 +82,9 @@
 
             <h2 class="title" id="clickOnMe"><a href="#updates" id="updatesLink">Updates</a></h2>
 
-            <!--<a href="Site/HTML/gallery.html">Image Gallery</a>-->
+            <a href="updates.html">Click here for a full list of website updates!</a>
 
         </div>
-
-        <script>
-        function updateAnimate() {
-            document.getElementById("github").classList.remove('lightSpeedIn');
-            document.getElementById("github").classList.add('fadeOutRight');
-            document.getElementById("updates").classList.remove('fadeInUp');
-            document.getElementById("updates").classList.add('fadeOutLeft');
-            console.log(document.getElementById("github").classList);
-            console.log("test");
-        };
-        </script>
-
-        <script>
-        $('#clickOnMe').click(function(){
-          $('#github').css({
-            'animation-name': 'fadeOutRight';
-          });
-        })
-        </script>
 
         <div id="about" class="box hero wow animated fadeInLeft">
 
@@ -122,7 +105,6 @@
                     <pre>
                     <span class="var">var</span><span class="varName"> me</span> = {
                         <span class="object">name</span>: <span class="objectContentString">'Jack'</span>,
-                        <span class="object">age</span>: <span class="objectContentInteger">12</span>,
                         <span class="object">likes</span>: <span class="objectContentArray">[</span><span class="objectContentString">'Coding'</span>, <span class="objectContentString">'Soccer'</span>, <span class="objectContentString">'Languages'</span><span class="objectContentArray">]</span>,
                         <span class="object">goodAt</span>: <span class="objectContentArray">[</span><span class="objectContentString">'HTML'</span>, <span class="objectContentString">'CSS'</span>, <span class="objectContentString">'Python'</span><span class="objectContentArray">]</span>,
                         <span class="object">currentlyLearning</span>: <span class="objectContentArray">[</span><span class="objectContentString">'JavaScript'</span>, <span class="objectContentString">'Swift'</span>, <span class="objectContentString">'C#',</span><span class="objectContentString">'PHP'</span>, <span class="objectContentArray">]</span>,
@@ -136,111 +118,6 @@
                 </div>
 
             </div>
-
-        </div>
-
-        <div id="contact" class="box wow hero animated fadeInDown">
-
-            <h1 class="title">
-                Want to talk to me?
-            </h1>
-
-            <p>
-                Website updates, coding help, or just a question, I'm always glad to help you. Just fill out the form below, and I'll reply ASAP.
-            </p>
-
-            <br />
-            <br />
-
-            <form id="contactMe" class="wow hero animated fadeInUp" action="Site/PHP/contactMe.php" method="POST">
-
-                <div class="columns">
-
-                    <div class="column">
-
-                        <div class="field">
-
-                            <label class="label">Name</label>
-
-                            <div class="control">
-
-                                <input type="text" class="input" placeholder="Enter your name" name="name" required/>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="column">
-
-                        <div class="field">
-
-                            <label class="label">Email address</label>
-
-                            <div class="control">
-
-                                <input type="email" class="input" placeholder="Enter your email address" name="email" required/>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="columns">
-
-                    <div class="column">
-
-                        <div class="field">
-
-                            <label class="label">What do you want to talk about?</label>
-
-                            <div class="control">
-
-                                <input type="text" class="input" placeholder="Really short description of your email" name="talkAbout" required />
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="column">
-
-                        <div class="field">
-
-                            <label class="label">Your actual email</label>
-
-                            <div class="control">
-
-                                <input type="text" class="input" placeholder="Just type your email body, but make sure everything is explained in detail" name="emailBody" required />
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="field">
-
-                    <div class="control">
-
-                        <input type="submit" class="button is-link" name="Submit" value="Send email" />
-
-                    </div>
-
-                </div>
-
-                <p class="help">
-                    All your information will be kept confidential
-                </p>
-
-            </form>
 
         </div>
 
