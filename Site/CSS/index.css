@@ -102,3 +102,7 @@ div#updates {
 div#about {
     width: 100%;
 }
+
+div#updates h2 {
+    vertical-align: middle;
+}
