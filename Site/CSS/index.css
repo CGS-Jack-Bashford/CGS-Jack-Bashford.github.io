@@ -70,6 +70,7 @@ div#typewriteDiv h1, div#typewriteDiv p {
 div#intro {
     background-image: url("../Media/Images/Canberra.jpg");
     margin-bottom: 20px;
+    background-repeat: no-repeat;
 }
 
 div#large-border {
