@@ -36,6 +36,10 @@ body {
     text-align: center;
 }
 
+.vertical-centered {
+    vertical-align: middle;
+}
+
 #typerwriter {
     display: inline-block;
 }
