@@ -103,3 +103,13 @@ div#about {
 div#updates h2 {
     vertical-align: middle;
 }
+
+div#fork-banner {
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
