@@ -106,7 +106,7 @@ div#updates h2 {
 
 div#fork-banner {
     z-index: 10000;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     border: 0;
