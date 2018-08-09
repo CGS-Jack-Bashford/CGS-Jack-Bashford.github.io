@@ -16,14 +16,15 @@ function loadFile(name, type){
 }
 
 //CSS
-loadFile("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css", "css");
-loadFile("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css", "css");
-loadFile("index.css", "css");
-loadFile("background.css", "css");
+loadFile("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css", "css"); //Animate.css
+loadFile("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css", "css");     //Bulma
+loadFile("https://use.fontawesome.com/releases/v5.2.0/css/all.css", "css");                  //Font Awesome
+loadFile("index.css", "css");                                                                //Main CSS
+loadFile("background.css", "css");                                                           //Background Animation CSS
 
 //JavaScript
-loadFile("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js", "js");
-loadFile("https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js", "js");
-loadFile("typewrite.js", "js");
-loadFile("smoothscroll.js", "js");
-loadFile("copytext.js", "js");
+loadFile("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js", "js");          //jQuery
+loadFile("https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js", "js");                   //Wow.js
+loadFile("typewrite.js", "js");                                                              //Typewriting JS
+loadFile("smoothscroll.js", "js");                                                           //Smooth Scrolling JS
+loadFile("copytext.js", "js");                                                               //Copy to clipboard JS
