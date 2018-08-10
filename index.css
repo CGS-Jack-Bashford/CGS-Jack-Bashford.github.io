@@ -120,3 +120,7 @@ div#fork-banner {
     display: inline-block;
     vertical-align: middle;
 }
+
+.fas {
+    margin-right: 0.75em;
+}
