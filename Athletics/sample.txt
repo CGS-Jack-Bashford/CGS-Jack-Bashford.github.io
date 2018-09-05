@@ -1,0 +1,16 @@
+'{
+    "races": [
+        {
+            "race": "100m Opens",
+            "garnsey": "11.34",
+            "middleton": "13.26",
+            "garran": "12.63",
+            "eddison": "11.56",
+            "edwards": "12.32",
+            "manaro": "13.93",
+            "hay": "11.97",
+            "sheaffe": "12.05",
+            "burgmann": "13.42"
+        }
+    ]
+}'

@@ -28,3 +28,4 @@ loadFile("https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js", "js");      
 loadFile("typewrite.js", "js");                                                              //Typewriting JS
 loadFile("smoothscroll.js", "js");                                                           //Smooth Scrolling JS
 loadFile("copytext.js", "js");                                                               //Copy to clipboard JS
+loadFile("stack.js", "js");                                                                  
