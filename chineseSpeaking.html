@@ -8,18 +8,28 @@
 
 		<meta charset="utf-8" />
 
-		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" />
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+		<script>
+			new WOW.init();
+		</script>
 
 		<style type="text/css">
+
+			@import url("https://fonts.googleapis.com/css?family=Comfortaa");
 
 			body {
 				margin: 0;
 				padding: 0;
+				font-family: "Comfortaa";
 			}
 
-			.container {
-				margin: auto;
-				margin-left: 17%;
+			#center-elements-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 
 		</style>
@@ -28,15 +38,11 @@
 
 	<body>
 
-		<div class="hero is-fullheight">
+		<div class="wow animated fadeInDown" id="center-elements-container">
 
-			<div class="container">
-
-				<h1 class="title intro-title" id="heading">
-					Jack Bashford and Declan Memmolo - Chinese Speaking Assessment Term 3
-				</h1>
-
-			</div>
+			<h1 id="heading">
+				Jack Bashford and Declan Memmolo - Chinese Speaking Assessment Term 3
+			</h1>
 
 		</div>
 
