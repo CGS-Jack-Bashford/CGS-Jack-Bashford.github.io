@@ -18,7 +18,19 @@
             gtag('config', 'UA-120207382-1');
         </script>-->
 
-        <script src="links.js"></script>
+        <script src="newLinks.js"></script>
+
+        <script>
+
+            var files = ["background.css", "copytext.js", "index.css", "smoothscroll.js", "stack.js", "typewrite.js"];
+
+            files.forEach(function(item) {
+
+                loadFile(item);
+
+            })
+
+        </script>
 
         <script>
             new WOW().init();

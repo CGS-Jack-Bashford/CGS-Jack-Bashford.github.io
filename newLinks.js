@@ -7,7 +7,8 @@ function addFile(fileName) {
         linkElement.setAttribute("rel", "stylesheet");
         linkElement.setAttribute("href", fileName);
         if (typeof linkElement != "undefined") {
-            document.getElementsByTagName("head")[0].appendChild(linkElement);
+            //document.getElementsByTagName("head")[0].appendChild(linkElement);
+            console.log(linkElement)
         }
     }
     else if (fileType == "js") {
@@ -15,7 +16,8 @@ function addFile(fileName) {
         scriptElement.setAttribute("type", "text/javascript");
         scriptElement.setAttribute("src", fileName);
         if (typeof scriptElement != "undefined") {
-            document.getElementsByTagName("body")[0].appendChild(scriptElement);
+            //document.getElementsByTagName("body")[0].appendChild(scriptElement);
+            console.log(scriptElement);
         }
     }
 }
