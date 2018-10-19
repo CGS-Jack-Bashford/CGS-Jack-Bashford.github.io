@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Refugees from Iraq to Australia</title>
+
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
+	<script>
+
+		new WOW().init();
+
+	</script>
+
+	<script>
+
+		var i = 0;
+
+		$("*").on("click", function() {
+			$("#i" + i).addClass("wow animated fadeInLeft faster");
+			$("#i" + i).removeAttr("style");
+			i++;
+		});
+
+	</script>
+
+	<style>
+
+		body {
+			margin: 10px;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		table {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<h1 id="i0" class="title intro-title" style="display: none;">Refugees from Iraq</h1>
+
+	<table class="table is-striped is-hoverable" border="1">
+		<tr id="i1" style="display: none;">
+			<th>Population</th>
+			<td>39,192,111</td>
+		</tr>
+		<tr id="i2" style="display: none;">
+			<th>Ethnic groups</th>
+			<td>Arab and Kurdish</td>
+		</tr>
+		<tr id="i3" style="display: none;">
+			<th>Religions</th>
+			<td>Muslim and Christian</td>
+		</tr>
+		<tr id="i4" style="display: none;">
+			<th>Male Life Expectancy</th>
+			<td>72.6 years</td>
+		</tr>
+		<tr id="i5" style="display: none;">
+			<th>Female Lift Expectancy</th>
+			<td>77.2 years</td>
+		</tr>
+		<tr id="i6" style="display: none;">
+			<th>Urban Population</th>
+			<td>70.5%</td>
+		</tr>
+		<tr id="i7" style="display: none;">
+			<th>Annual Urbanisation Rate</th>
+			<td>3.06%</td>
+		</tr>
+		<tr id="i8" style="display: none;">
+			<th>Fertility Rate</th>
+			<td>4 children per woman</td>
+		</tr>
+		<tr id="i9" style="display: none;">
+			<th>Type of Government</th>
+			<td>Federal Parliamentary Republic</td>
+		</tr>
+		<tr id="i10" style="display: none;">
+			<th title="Percentage of population that can read and write">Literacy Percentage</th>
+			<td>79.7%</td>
+		</tr>
+	</table>
+
+	<div id="i11" style="display: none;">
+		<img src="iraq-map.jpg" alt="Map of Iraq" />
+	</div>
