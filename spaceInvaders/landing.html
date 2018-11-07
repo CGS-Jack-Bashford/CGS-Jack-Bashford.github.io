@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+	
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title>Play Space Invaders!</title>
+		
+		<script>
+			
+			function validate(e) {
+				
+				e.preventDefault();
+				
+				var name = document.getElementById("username").value;
+				
+				localStorage.setItem("username", username);
+				
+			}
+			
+		</script>
+		
+		<style>
+			
+			body {
+				background-color: black;
+				color: #0f0;
+				font-family: monospace;
+			}
+			
+			table {
+				border: 1px solid #0f0;
+			}
+			
+			input {
+				background-color: black;
+				color: #f00;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<h1>
+			Play Space Invaders!
+		</h1>
+		
+		<form id="nameForm" onsubmit="validate(e)" action="index.html">
+			
+			<table>
+				
+				<tr>
+					<td>Username: </td>
+					<td><input id="username" type="text" placeholder="Enter your username" /></td>
+					
+				</tr>
+				
+			</table>
+			
+			<input type="submit" value="Submit" />
+			
+		</form>
+		
+	</body>
+	
+</html>
