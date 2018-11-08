@@ -87,17 +87,17 @@
 
         if (!darkMode) {
 
+          darkMode = true;
           $("#darkMode").removeClass("btn-dark").addClass("btn-light").text("Light Mode");
           $("nav").removeClass("navbar-light bg-light").addClass("navbar-dark bg-dark");
-          darkMode = true;
 
         }
 
         else {
 
+          darkMode = false;
           $("#darKMode").removeClass("btn-light").addClass("btn-dark").text("Dark Mode");
           $("nav").removeClass("navbar-dark bg-dark").addClass("navbar-light bg-light");
-          darkMode = false;
 
         }
 
