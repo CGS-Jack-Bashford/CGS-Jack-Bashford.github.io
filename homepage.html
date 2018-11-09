@@ -8,7 +8,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
 
     <title>Home</title>
 
@@ -26,7 +27,7 @@
 
       </button>
 
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse justify-content-between">
 
         <ul class="navbar-nav">
 
@@ -48,7 +49,7 @@
 
         </ul>
 
-        <ul class="nav justify-content-end">
+        <ul class="nav justify-content-end" style="float: right;">
 
           <li class="nav-item">
 
@@ -67,17 +68,18 @@
         <h1 class="display-4">Space Invaders</h1>
         <p class="lead">I made a game of Space Invaders recently. You can play it right here, on my website!</p>
         <hr class="my-4" />
-        <a class="btn btn-success btn-lg" href="spaceInvaders/index.html" role="button">Play!</a>
+        <a class="btn btn-success btn-lg" href="spaceInvaders/index.html" role="button" style="color: #000">Play!</a>
 
       </div>
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 
     <script>
 
@@ -90,6 +92,8 @@
           darkMode = true;
           $("#darkMode").removeClass("btn-dark").addClass("btn-light").text("Light Mode");
           $("nav").removeClass("navbar-light bg-light").addClass("navbar-dark bg-dark");
+          $(".jumbotron").removeClass("bg-light").addClass("bg-dark");
+          $(".jumbotron a, .jumbotron p, .jumbotron h1").css("color", "#eeeeee");
 
         }
 
@@ -98,6 +102,8 @@
           darkMode = false;
           $("#darkMode").removeClass("btn-light").addClass("btn-dark").text("Dark Mode");
           $("nav").removeClass("navbar-dark bg-dark").addClass("navbar-light bg-light");
+          $(".jumbotron").removeClass("bg-dark").addClass("bg-light");
+          $(".jumbotron a, .jumbotron p, .jumbotron h1").css("color", "#000000");
 
         }
 
