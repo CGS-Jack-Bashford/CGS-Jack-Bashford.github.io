@@ -8,13 +8,21 @@
 
 <body>
 
-    <form action="http://jackbashford.epizy.com/signUp.php" method="POST">
+    <form action="http://members.iinet.net.au/~natandchris_new/PHP/signUp.php" method="POST">
 
         <input type="email" name="email" />
 
         <input type="submit" />
 
     </form>
+
+    <script>
+
+    document.getElementsByTagName("form")[0].addEventListener("submit", e => {
+        e.preventDefault();
+    })
+
+    </script>
 
 </body>
 
