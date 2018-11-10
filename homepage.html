@@ -14,19 +14,13 @@
 
         <style>
 
-        video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            z-index: -10;
-            background-color: white;
-        }
-
         #page1 {
             background-color: white;
         }
+
+		.page {
+			height: 100vh;
+		}
 
         </style>
 
@@ -36,7 +30,7 @@
 
         <div id="page1" class="page">
 
-    		<nav class="navbar sticky-top navbar-light bg-light navbar-expand-lg">
+    		<nav class="navbar fixed-top navbar-light bg-light navbar-expand-lg">
 
     			<a class="navbar-brand" href="#">Jack</a>
 
@@ -68,13 +62,13 @@
 
     				</ul>
 
-    				<ul class="nav justify-content-end" style="float: right;">
+    				<!--<ul class="nav justify-content-end" style="float: right;">
 
     					<li class="nav-item">
 
     						<button class="btn btn-dark" type="button" onclick="toggleDarkMode()" id="darkMode">Dark Mode</button>
 
-    				</ul>
+    				</ul>-->
 
     			</div>
 
@@ -85,29 +79,68 @@
     			<div class="jumbotron vertical-center bg-light">
 
     				<h1 class="display-4">Space Invaders</h1>
+
     				<p class="lead">I made a game of Space Invaders recently. You can play it right here, on my website!</p>
+
     				<hr class="my-4" />
+
     				<a class="btn btn-success btn-lg" href="spaceInvaders/index.html" role="button" style="color: #000">Play!</a>
 
     			</div>
 
     		</div>
 
-            <div class="background-wrap-video">
-
-                <video id="background-video" preload="auto" autoplay="autplay" muted="muted">
-
-                    <source src="spaceInvadersBackground.mov" type="video/mp4" />
-
-                </video>
-
-            </div>
-
         </div>
 
         <div id="page2" class="page">
 
-            <form id="signup" action="jackbashford.000webhostapp.com">
+			<div class="jumbotron vertical-center bg-light">
+
+				<div class="container">
+
+					<h1 class="display-4">Newsletter</h1>
+
+					<p class="lead">Sign up for a free, regular code and web development newsletter!</p>
+
+					<hr class="my-4" />
+
+					<p class="lead">Don't worry - I'll be the only one with access to your email address</p>
+
+				</div>
+
+			</div>
+
+			<div class="container">
+
+	            <form id="signup" action="https://members.iinet.net.au/~natandchris_new/PHP/signUp.php">
+
+					<div class="form-group">
+
+						<div class="feedback">
+
+							<label for="signUpEmail">Email address</label>
+
+						</div>
+
+						<input type="email" class="form-control" id="signUpEmail" aria-describedby="emailHelp" placeholder="you@example.com"/>
+
+						<div class="feedback">
+
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else</small>
+
+						</div>
+
+					</div>
+
+					<div class="form-group">
+
+						<button type="submit" class="btn btn-primary btn-large">Sign up</button>
+
+					</div>
+
+				</form>
+
+			</div>
 
         </div>
 
@@ -117,12 +150,7 @@
 
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-		<script>
-
-            /*$(function() {
-                $("#background-video").height = 100vh;
-                $("#background-video").width = 100vw;
-            })*/
+		<!--<script>
 
 			var darkMode = false;
 
@@ -135,7 +163,9 @@
 					$("nav").removeClass("navbar-light bg-light").addClass("navbar-dark bg-dark");
 					$(".jumbotron").removeClass("bg-light").addClass("bg-dark");
 					$(".jumbotron a, .jumbotron p, .jumbotron h1").css("color", "#eeeeee");
-                    $("video, #page1").css("background-color", "black");
+                    $(".page").css("background-color", "black");
+					$("input").addClass("is-valid").css("backgroundColor", "black");
+					$(".feedback").addClass("valid-feedback");
 
 				}
 
@@ -146,13 +176,15 @@
 					$("nav").removeClass("navbar-dark bg-dark").addClass("navbar-light bg-light");
 					$(".jumbotron").removeClass("bg-dark").addClass("bg-light");
 					$(".jumbotron a, .jumbotron p, .jumbotron h1").css("color", "#000000");
-                    $("video, #page1").css("background-color", "white");
+                    $(".page").css("background-color", "white");
+					$("input").removeClass("is-valid").css("backgroundColor", "white");
+					$(".feedback").removeClass("valid-feedback");
 
 				}
 
 			}
 
-		</script>
+		</script>-->
 
 	</body>
 
