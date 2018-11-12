@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Stocks</title>
+
+    <meta charset="utf-8" />
+
+    <style>
+
+        body {
+            font-family: sans-serif;
+        }
+
+        td, th {
+            width: 12vw;
+        }
+
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script>
+
+        $(function() {
+            for (let i = 1; i <= 5; i++) {
+                let row = `<tr><td><input type='text' id='company-${i}' /></td><td><input type='text' id='code-${i}' /></td><td><input type='number' id='shares-${i}' /></td><td><input type='number' id='start-${i}' /></td><td id='investment-${i}'></td><td><input type='number' id='finish-${i}' /></td><td id='end-${i}'></td></tr>`;
+                $("#table").append(row);
+            }
+            let bottomRow = "<tr><th colspan='4'>Total Portfolio Value</th><th id='start-investment-total'></th><td></td><th id='end-investment-total'></th></tr>";
+            $("#table").append(bottomRow);
+            $("#table").on("change", function() {
+                var totalStart = totalEnd = 0;
+                for (let i = 1; i <= 5; i++) {
+                    $(`#investment-${i}`).html(`$${$(`#shares-${i}`).val() * $(`#start-${i}`).val()}`);
+                    totalStart += parseInt($(`#shares-${i}`).val() * $(`#start-${i}`).val());
+                    $(`#end-${i}`).html(`$${$(`#shares-${i}`).val() * $(`#finish-${i}`).val()}`);
+                    totalEnd += parseInt($(`#shares-${i}`).val() * $(`#finish-${i}`).val());
+                }
+                $("#start-investment-total").html(`$${totalStart}`);
+                $("#end-investment-total").html(`$${totalEnd}`);
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <table id="table">
+
+        <tr>
+
+            <th colspan="8">$100,000 Share Portfolio</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Company</td>
+
+            <td>Code</td>
+
+            <td>No of Shares</td>
+
+            <td>Start</td>
+
+            <td>Investment</td>
+
+            <td>Finish</td>
+
+            <td>Investment</td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
