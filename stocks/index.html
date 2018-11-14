@@ -42,7 +42,7 @@
             }
             let bottomRow = "<tr><th colspan='4'>Total Portfolio Value</th><th id='start-investment-total'></th><td></td><th id='end-investment-total'></th></tr>";
             $("#table").append(bottomRow);
-            /*$("#table").on("change", function() {
+            $("#table").on("change", function() {
                 var totalStart = totalEnd = 0;
                 for (let i = 1; i <= 5; i++) {
                     $(`#investment-${i}`).html(`$${$(`#shares-${i}`).val() * $(`#start-${i}`).val()}`);
@@ -52,10 +52,7 @@
                 }
                 $("#start-investment-total").html(`$${totalStart}`);
                 $("#end-investment-total").html(`$${totalEnd}`);
-            });*/
-            $("#button").on("click", function() {
-
-            })
+            });
         });
 
     </script>
@@ -91,8 +88,6 @@
         </tr>
 
     </table>
-
-    <button id="button">Fill my data</button>
 
 </body>
 
