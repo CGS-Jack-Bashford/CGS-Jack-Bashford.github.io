@@ -8,7 +8,19 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+		<!-- Bootstrap -->
+
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+		<!-- Font Awesome -->
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/regular.css">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css">
 
 		<title>Jack | Home</title>
 
@@ -46,13 +58,13 @@
 
     					<li class="nav-item active">
 
-    						<a class="nav-link" href="#">Home</a>
+    						<a class="nav-link" href="#">Home <i class="fa fa-home"></i></a>
 
     					</li>
 
     					<li class="nav-item dropdown">
 
-    						<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
+    						<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools <i class="fas fa-hammer"></i></a>
 
     						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
@@ -62,13 +74,13 @@
 
     				</ul>
 
-    				<!--<ul class="nav justify-content-end" style="float: right;">
+    				<ul class="nav justify-content-end" style="float: right;">
 
     					<li class="nav-item">
 
-    						<button class="btn btn-dark" type="button" onclick="toggleDarkMode()" id="darkMode">Dark Mode</button>
+    						<button class="btn btn-outline-success" type="button" id="contactMe">Contact Me <i class="fas fa-external-link-alt"></i></button>
 
-    				</ul>-->
+    				</ul>
 
     			</div>
 
@@ -84,7 +96,7 @@
 
     				<hr class="my-4" />
 
-    				<a class="btn btn-success btn-lg" href="spaceInvaders/index.html" role="button" style="color: #000">Play!</a>
+    				<a class="btn btn-outline-success btn-lg" href="spaceInvaders/index.html" role="button" style="color: #000">Play!</a>
 
     			</div>
 
@@ -154,81 +166,127 @@
 
 					<a class="btn btn-warning btn-lg" href="javascript:void(0);">Learn!</a>
 
-				</div>
+			</div>
 
 			</div>
 
-			<div class="row">
+			<div class="container">
 
-		  		<div class="col-4">
+				<div class="row">
 
-			   		<div class="list-group" id="list-tab" role="tablist">
+			  		<div class="col-4">
 
-			   			<a class="list-group-item list-group-item-action active" id="learn-html" data-toggle="list" href="#html" role="tab" aria-controls="html">HTML</a>
-			  			<a class="list-group-item list-group-item-action" id="learn-css" data-toggle="list" href="#css" role="tab" aria-controls="css">CSS</a>
-			   			<a class="list-group-item list-group-item-action" id="learn-javascript" data-toggle="list" href="#javascript" role="tab" aria-controls="javascript">JavaScript</a>
-						<a class="list-group-item list-group-item-action" id="learn-php" data-toggle="list" href="#php" role="tab" aria-controls="php">PHP</a>
-			   			<a class="list-group-item list-group-item-action" id="learn-swift" data-toggle="list" href="#swift" role="tab" aria-controls="swift">Swift</a>
+				   		<div class="list-group" id="list-tab" role="tablist">
 
-			   		</div>
+				   			<a class="list-group-item list-group-item-action active" id="learn-html" data-toggle="list" href="#html" role="tab" aria-controls="html">HTML</a>
+				  			<a class="list-group-item list-group-item-action" id="learn-css" data-toggle="list" href="#css" role="tab" aria-controls="css">CSS</a>
+				   			<a class="list-group-item list-group-item-action" id="learn-javascript" data-toggle="list" href="#javascript" role="tab" aria-controls="javascript">JavaScript</a>
+							<a class="list-group-item list-group-item-action" id="learn-php" data-toggle="list" href="#php" role="tab" aria-controls="php">PHP</a>
+				   			<a class="list-group-item list-group-item-action" id="learn-swift" data-toggle="list" href="#swift" role="tab" aria-controls="swift">Swift</a>
+							<a class="list-group-item list-group-item-action" id="learn-jquery" data-toggle="list" href="#jquery" role="tab" aria-controls="jquery">jQuery</a>
 
-			   	</div>
+				   		</div>
 
-			   	<div class="col-8">
+				   	</div>
 
-			   		<div class="tab-content" id="nav-tabContent">
+				   	<div class="col-8">
 
-			   			<div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="learn-html">
+				   		<div class="tab-content" id="nav-tabContent">
 
-			   				<p>
-								HTML (HyperText Markup Language) is the markup language involved in creating webpages. It is made up of structure-specific <em>tags</em> surrounding content, including text, images, videos, and much much more. HTML markup looks like this:
-							</p>
-							<br />
-							<pre id="html-example">
-								<code>
-	&lt;html&gt;
-		&lt;head&gt;
-			&lt;title&gt;A simple webpage&lt;/titlegt;
-		&lt;/head&gt;
-		&lt;body&gt;
-			&lt;h1&gt;This is a simple webpage!&lt;/h1&gt;
-			&lt;p&gt;If you want to learn more about HTML, there's a great website - &lt;a href="https://tutorials.jackbashford.com/html"&gt;tutorials.jackbashford.com&lt;/a&gt; - that teaches you the basics of HTML webpages, right up to making working signup and login forms with PHP, web games with JavaScript, and making it all look great with CSS. All this for FREE!&lt;/p&gt;
-		&lt;/body&gt;
-	&lt;/html&gt;
+				   			<div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="learn-html">
 
-			   			</div>
+				   				<p>
+									HTML (HyperText Markup Language) is the markup language involved in creating webpages. It is made up of structure-specific <em>tags</em> surrounding content, including text, images, videos, and much much more. HTML markup looks like this:
+								</p>
+								<br />
+								<pre id="html-example" class="prettyprint"><code class="language-html">
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;A simple webpage&lt;/titlegt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;This is a simple webpage!&lt;/h1&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+								</code></pre>
 
-			   			<div class="tab-pane fade" id="coal" role="tabpanel" aria-labelledby="list-profile-list">
+				   			</div>
 
-			   				The mineral we obtain from mining coal is simply coal, as it does not need to be processed in any way to be useful to us. Made mainly from carbon (chemical symbol <code>C</code>), it is formed from the compacted remains of carbon-based lifeforms that existed and died millions of years ago. We use it mainly as a power source around the world, but in Australia we primarily export it, as sustainability has become a prioritised focus of our environment. Coal is usually found in <mark><em>sedimentary rocks</em></mark>, near large fossil deposits, as the owners of the fossils usually supplied the decomposed tissue coal is composed of.
+				   			<div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="learn-css">
 
-			   			</div>
+				   				<p>
+									CSS, Cascading Style Sheets, is the way we make HTML webpages look good (like how this page looks right now). It works by specifying something to style (a <em>selector</em>), then applying a <em>value</em> to a certain <em>property</em> to change how the selected element looks. For instance, this CSS makes all paragraphs red:
+								</p>
+								<br />
+								<pre id="css-example" class="prettyprint"><code class="language-css">
+p {
+	color: red;
+}
+								</code></pre>
+				   			</div>
 
-			   			<div class="tab-pane fade" id="gold" role="tabpanel" aria-labelledby="list-messages-list">
+				   			<div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="learn-javascript">
 
-			   				Gold (chemical symbol <code>Au</code>) is useful to humans in various ways after it has been mined, cleansed, cut and polished. It is used mainly for jewellery purposes, but as an extremely efficient and long-lasting conductor of heat and electricity, gold is also used in technology &mdash; you can find gold in the circuitry of nearly any computer, phone, or tablet you see. Gold is nearly always found in <mark><em>igneous rocks</em></mark>, either from being formed around by magma, or from erosion of metamorphic, sedimentary, or other igneous rocks.
+				   				<p>
+									JavaScript (also known as ECMAScript) is a programming language used to add behavioral components to webpages. It can do pretty much anything if it is coupled with a server-side language (see PHP below), including making games, forms, and even email programs on a website! JavaScript is by far one of the simplest scripting languages to learn - here's something that gives you a popup when the user clicks on a button (coupled with HTML):
+								</p>
+								<br />
+								<pre id="javascript-example" class="prettyprint"><code class="language-html">
+&lt;button id="theButton" onclick="myFunction()"&gt;Click me!&lt;/button&gt;
+</code><code class="language-javascript"><hr />function myFunction() {
+	alert("You clicked a button!");
+}
+								</code></pre>
+								<br />
+								<p>
+									Note: In one of the most confusing name relationships ever, JavaScript has nothing at all to do with Java.
+								</p>
+				   			</div>
 
-			   			</div>
+				   			<div class="tab-pane fade" id="php" role="tabpanel" aria-labelledby="learn-php">
 
-			   			<div class="tab-pane fade" id="haematite" role="tabpanel" aria-labelledby="list-settings-list">
+				   				<p>
+									PHP (Hypertext PreProcessor) is a server-side scripting language that is used for many things, including
 
-			   				Haematite is the mineral in which we find the greatest quantities of iron (chemical symbol <code>Fe</code>). Iron is used today mainly combined with carbon to create steel, one of the strongest and most versatile metals in use around the world today. Used mainly in construction, steel can be used in a building in many ways, most prominently and frequently used, however, is a grid of steel which cement is poured over to form reinforced concrete. Tonnes of reinforced concrete is used each day for various buildings around the world. Haematite is most commonly found in <mark><em>sedimentary rocks</em></mark>.
+				   			</div>
 
-			   			</div>
+							<div class="tab-pane fade" id="swift" role="tabpanel" aria-labelledby="learn-swift">
 
-			   		</div>
+								Swift
 
-			   	</div>
+							</div>
+
+							<div class="tab-pane fade" id="jquery" role="tabpanel" aria-labelledby="learn-jquery">
+
+
+
+							</div>
+
+				   		</div>
+
+				   	</div>
+
+				</div>
 
 			</div>
 
         </div>
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<!-- jQuery -->
+
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+		<!-- Popper -->
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 
+		<!-- Bootstrap -->
+
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+		<!-- Prettify -->
+
+		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
 		<!--<script>
 
