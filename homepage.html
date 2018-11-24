@@ -26,12 +26,13 @@
 
         <style>
 
-        #page1 {
-            background-color: white;
-        }
-
 		.page {
 			height: 100vh;
+			border-bottom: 1px solid #eee;
+			align-items: center;
+		}
+		.page .container {
+			vertical-align: middle;
 		}
 
         </style>
@@ -96,7 +97,7 @@
 
     				<hr class="my-4" />
 
-    				<a class="btn btn-outline-success btn-lg" href="spaceInvaders/index.html" role="button" style="color: #000">Play!</a>
+    				<a class="btn btn-outline-success btn-lg" href="spaceInvaders/index.html" role="button">Play!</a>
 
     			</div>
 
@@ -154,9 +155,9 @@
 
 			</div>-->
 
-			<div class="jumbotron vertical-center bg-light">
+			<div class="container">
 
-				<div class="contaner">
+				<div class="jumbotron vertical-center bg-light">
 
 					<h1 class="display-4">Learn to Code</h1>
 
@@ -164,117 +165,7 @@
 
 					<hr class="my-4" />
 
-					<a class="btn btn-warning btn-lg" href="javascript:void(0);">Learn!</a>
-
-			</div>
-
-			</div>
-
-			<div class="container">
-
-				<div class="row">
-
-			  		<div class="col-4">
-
-				   		<div class="list-group" id="list-tab" role="tablist">
-
-				   			<a class="list-group-item list-group-item-action active" id="learn-html" data-toggle="list" href="#html" role="tab" aria-controls="html">HTML</a>
-				  			<a class="list-group-item list-group-item-action" id="learn-css" data-toggle="list" href="#css" role="tab" aria-controls="css">CSS</a>
-				   			<a class="list-group-item list-group-item-action" id="learn-javascript" data-toggle="list" href="#javascript" role="tab" aria-controls="javascript">JavaScript</a>
-							<a class="list-group-item list-group-item-action" id="learn-php" data-toggle="list" href="#php" role="tab" aria-controls="php">PHP</a>
-				   			<a class="list-group-item list-group-item-action" id="learn-swift" data-toggle="list" href="#swift" role="tab" aria-controls="swift">Swift</a>
-							<a class="list-group-item list-group-item-action" id="learn-jquery" data-toggle="list" href="#jquery" role="tab" aria-controls="jquery">jQuery</a>
-
-				   		</div>
-
-				   	</div>
-
-				   	<div class="col-8">
-
-				   		<div class="tab-content" id="nav-tabContent">
-
-				   			<div class="tab-pane fade show active" id="html" role="tabpanel" aria-labelledby="learn-html">
-
-				   				<p>
-									HTML (HyperText Markup Language) is the markup language involved in creating webpages. It is made up of structure-specific <em>tags</em> surrounding content, including text, images, videos, and much much more. HTML markup looks like this:
-								</p>
-								<br />
-								<pre id="html-example" class="prettyprint"><code class="language-html">
-&lt;html&gt;
-	&lt;head&gt;
-		&lt;title&gt;A simple webpage&lt;/titlegt;
-	&lt;/head&gt;
-	&lt;body&gt;
-		&lt;h1&gt;This is a simple webpage!&lt;/h1&gt;
-	&lt;/body&gt;
-&lt;/html&gt;
-								</code></pre>
-
-				   			</div>
-
-				   			<div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="learn-css">
-
-				   				<p>
-									CSS, Cascading Style Sheets, is the way we make HTML webpages look good (like how this page looks right now). It works by specifying something to style (a <em>selector</em>), then applying a <em>value</em> to a certain <em>property</em> to change how the selected element looks. For instance, this CSS makes all paragraphs red:
-								</p>
-								<br />
-								<pre id="css-example" class="prettyprint"><code class="language-css">
-p {
-	color: red;
-}
-								</code></pre>
-				   			</div>
-
-				   			<div class="tab-pane fade" id="javascript" role="tabpanel" aria-labelledby="learn-javascript">
-
-				   				<p>
-									JavaScript (also known as ECMAScript) is a programming language used to add behavioral components to webpages. It can do pretty much anything if it is coupled with a server-side language (see PHP below), including making games, forms, and even email programs on a website! JavaScript is by far one of the simplest scripting languages to learn - here's something that gives you a popup when the user clicks on a button (coupled with HTML):
-								</p>
-								<br />
-								<pre id="javascript-example" class="prettyprint"><code class="language-html">
-&lt;button id="theButton" onclick="myFunction()"&gt;Click me!&lt;/button&gt;
-</code><code class="language-javascript"><hr />function myFunction() {
-	alert("You clicked a button!");
-}
-								</code></pre>
-								<br />
-								<p>
-									Note: In one of the most confusing name relationships ever, JavaScript has nothing at all to do with Java.
-								</p>
-				   			</div>
-
-				   			<div class="tab-pane fade" id="php" role="tabpanel" aria-labelledby="learn-php">
-
-				   				<p>
-									PHP (Hypertext PreProcessor) is a server-side scripting language that is used for many things, including form handling, emails, and scoreboards for contests. It's by far the simplest server-side language to learn. Below is a simple email program in PHP:
-								</p>
-								<br />
-								<pre id="php-example" class="prettyprint"><code class="language-php">
-&lt;?php
-$to = "jack@jackbashford.com";
-$subject = "PHP Example";
-$body = "This is a PHP example!";
-mail($to, $subject, $body);
-?&gt;
-								</code></pre>
-
-				   			</div>
-
-							<div class="tab-pane fade" id="swift" role="tabpanel" aria-labelledby="learn-swift">
-
-								Swift is a language developed by Apple for use in creating programs for macOS, iOS, tvOS, and watchOS. It can be run practically exclusively on Apple Xcode. Here's what it looks like:
-
-							</div>
-
-							<div class="tab-pane fade" id="jquery" role="tabpanel" aria-labelledby="learn-jquery">
-
-
-
-							</div>
-
-				   		</div>
-
-				   	</div>
+					<a class="btn btn-outline-warning btn-lg" href="javascript:void(0);">Learn!</a>
 
 				</div>
 
@@ -298,41 +189,15 @@ mail($to, $subject, $body);
 
 		<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
-		<!--<script>
+		<!-- Wow -->
 
-			var darkMode = false;
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 
-			function toggleDarkMode() {
+		<script>
 
-				if (!darkMode) {
 
-					darkMode = true;
-					$("#darkMode").removeClass("btn-dark").addClass("btn-light").text("Light Mode");
-					$("nav").removeClass("navbar-light bg-light").addClass("navbar-dark bg-dark");
-					$(".jumbotron").removeClass("bg-light").addClass("bg-dark");
-					$(".jumbotron a, .jumbotron p, .jumbotron h1").css("color", "#eeeeee");
-                    $(".page").css("background-color", "black");
-					$("input").addClass("is-valid").css("backgroundColor", "black");
-					$(".feedback").addClass("valid-feedback");
 
-				}
-
-				else {
-
-					darkMode = false;
-					$("#darkMode").removeClass("btn-light").addClass("btn-dark").text("Dark Mode");
-					$("nav").removeClass("navbar-dark bg-dark").addClass("navbar-light bg-light");
-					$(".jumbotron").removeClass("bg-dark").addClass("bg-light");
-					$(".jumbotron a, .jumbotron p, .jumbotron h1").css("color", "#000000");
-                    $(".page").css("background-color", "white");
-					$("input").removeClass("is-valid").css("backgroundColor", "white");
-					$(".feedback").removeClass("valid-feedback");
-
-				}
-
-			}
-
-		</script>-->
+		</script>
 
 	</body>
 
