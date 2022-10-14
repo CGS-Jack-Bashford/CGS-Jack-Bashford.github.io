@@ -1,3 +1,5 @@
+// Ideally, this is a piece of code that will provide a 'typing' animation/effect.
+
 var TxtType = function(el, toRotate, period) {
 	this.toRotate = toRotate;
 	this.el = el;
